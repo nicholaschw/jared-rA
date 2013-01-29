@@ -27,7 +27,7 @@
 #include "omap3_voltages.h"
 
 #include <plat/common.h>
-struct omap_opp_def omap36xx_opp_def_list_shared[15];  /*shared*/
+struct omap_opp_def omap36xx_opp_def_list_shared[20];  /*shared*/
 
 /* 34xx */
 
