@@ -84,10 +84,10 @@ struct omap_vdd_dep_info omap34xx_vddmpu_dep_info[] = {
 /* VDD1 */
 
 #if 0
-#define OMAP3630_VDD_MPU_OPP50_UV		1012500
-#define OMAP3630_VDD_MPU_OPP100_UV		1200000
-#define OMAP3630_VDD_MPU_OPP120_UV		1325000
-#define OMAP3630_VDD_MPU_OPP1G_UV		1375000
+#define OMAP3630_VDD_MPU_OPP50_UV		972500
+#define OMAP3630_VDD_MPU_OPP100_UV		1100000
+#define OMAP3630_VDD_MPU_OPP120_UV		1300000
+#define OMAP3630_VDD_MPU_OPP1G_UV		1400000
 #endif
 
 struct omap_volt_data omap36xx_vddmpu_volt_data[] = {
@@ -158,7 +158,7 @@ static struct omap_opp_def __initdata omap34xx_opp_def_list[] = {
 
 static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
 	/* MPU OPP1 - OPP50 */
-	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  300000000, OMAP3630_VDD_MPU_OPP50_UV),
+	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  275000000, OMAP3630_VDD_MPU_OPP50_UV),
 	/* MPU OPP2 - OPP100 */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  600000000, OMAP3630_VDD_MPU_OPP100_UV),
 	/* MPU OPP3 - OPP-Turbo */
@@ -166,7 +166,7 @@ static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
 				800000000, OMAP3630_VDD_MPU_OPP120_UV),
 	/* MPU OPP4 - OPP-SB */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
-				1000000000, OMAP3630_VDD_MPU_OPP1G_UV),
+				1200000000, OMAP3630_VDD_MPU_OPP1G_UV),
 
 /* S[, 2012.07.02, mannsik.chung@lge.com, Boost L3 clock. (TI patch by deepak.muddegowda@sasken.com) */
 #if 0
