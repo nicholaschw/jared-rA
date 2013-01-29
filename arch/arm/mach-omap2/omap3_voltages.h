@@ -1,5 +1,5 @@
 /* these are the voltages of the OMAP3 
- * for MPU and CORE voltages
+ * for MPU and CORE voltages modified by nicholaschw
  */
 
 #define OMAP3630_VDD_MPU_OPP50_UV               972500

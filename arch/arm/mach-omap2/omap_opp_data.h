@@ -61,6 +61,7 @@ struct omap_opp_def {
 extern struct omap_opp_def omap36xx_opp_def_list_shared[20];
 /*
  * Initialization wrapper used to define an OPP for OMAP variants.
+ * Initialize the OPP with shared_list modiffication by nicholaschw
  */
 #define OPP_INITIALIZER(_hwmod_name, _clk_name, _voltdm_name, _enabled, _freq, _uv)	\
 {								\
