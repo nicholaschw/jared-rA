@@ -58,7 +58,7 @@ struct omap_opp_def {
 	bool default_available;
 };
 
-extern struct omap_opp_def omap36xx_opp_def_list_shared[15];
+extern struct omap_opp_def omap36xx_opp_def_list_shared[20];
 /*
  * Initialization wrapper used to define an OPP for OMAP variants.
  */
@@ -94,8 +94,8 @@ extern int __init omap_init_opp_table(struct omap_opp_def *opp_def,
 extern struct omap_volt_data omap34xx_vddmpu_volt_data[];
 extern struct omap_volt_data omap34xx_vddcore_volt_data[];
 extern struct omap_vdd_dep_info omap34xx_vddmpu_dep_info[];
-extern struct omap_volt_data omap36xx_vddmpu_volt_data[];
-extern struct omap_volt_data omap36xx_vddcore_volt_data[];
+extern struct omap_volt_data omap36xx_vddmpu_volt_data[20];
+extern struct omap_volt_data omap36xx_vddcore_volt_data[20];
 extern struct omap_vdd_dep_info omap36xx_vddmpu_dep_info[];
 
 extern struct omap_volt_data omap443x_vdd_mpu_volt_data[];
