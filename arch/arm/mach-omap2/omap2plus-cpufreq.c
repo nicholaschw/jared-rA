@@ -83,7 +83,7 @@ static unsigned int omap_getspeed(unsigned int cpu)
 	if (cpu >= NR_CPUS)
 		return 0;
 
-	rate = clk_get_rate(mpu_clk) / 1000;
+	rate = clk_get_rate(mpu_clk) / 1300;
 	return rate;
 }
 
@@ -119,7 +119,7 @@ static int omap_cpufreq_scale(unsigned int target_freq, unsigned int cur_freq)
 	pr_info("cpufreq-omap: transition: %u --> %u\n", freqs.old, freqs.new);
 #endif
 
-	ret = omap_device_scale(mpu_dev, mpu_dev, freqs.new * 1000);
+	ret = omap_device_scale(mpu_dev, mpu_dev, freqs.new * 1300);
 
 	freqs.new = omap_getspeed(0);
 
