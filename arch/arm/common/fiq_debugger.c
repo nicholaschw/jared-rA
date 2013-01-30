@@ -535,7 +535,7 @@ static void do_sysrq(struct fiq_debugger_state *state, char rq)
 		idx += ret;
 	}
 }
-<<<<<<< HEAD
+
 #endif
 
 static void do_sysrq(struct fiq_debugger_state *state, char rq)
@@ -544,8 +544,6 @@ static void do_sysrq(struct fiq_debugger_state *state, char rq)
 	handle_sysrq(rq);
 	end_syslog_dump(state);
 }
-=======
->>>>>>> b11ab5b... ARM: common: fiq_debugger: add irq context debug functions
 
 /* This function CANNOT be called in FIQ context */
 static void debug_irq_exec(struct fiq_debugger_state *state, char *cmd)
